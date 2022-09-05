@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>for2</title>
+    </head>
+    <style>
+        *{
+            font-size: 20px;
+        }
+    </style>
+    <body>
+        <div id="result"></div>
+
+
+
+        <script>
+            var result=document.getElementById('result');
+            var allI='';
+            
+            for (var i = 1; i < 10 ; i++)
+            {
+                allI = allI + '<br>' +  i + ':' ;
+                for(var j = 1 ; j < 10 ; j++)
+                {
+                    allI = allI + '<br>' + i + "*" + j+ '=' + i * j;
+                    
+                }
+            }
+
+            result.innerHTML=allI;
+        </script>
+    </body>
+</html>
